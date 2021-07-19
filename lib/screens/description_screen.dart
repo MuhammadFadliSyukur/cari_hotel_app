@@ -2,12 +2,37 @@ import 'package:carihotel_app/theme.dart';
 import 'package:flutter/material.dart';
 
 class DescriptionScreen extends StatelessWidget {
+  final String image;
+  final String name;
+  final String location;
+  final String agentPhoto;
+  final String agent;
+  final String agentJob;
+  final String description;
+  final String locationImage;
+  final String price;
+  final String call;
+  final String urlLocation;
+
+  DescriptionScreen({
+    this.image,
+    this.name,
+    this.location,
+    this.agent,
+    this.agentJob,
+    this.description,
+    this.locationImage,
+    this.price,
+    this.call,
+    this.urlLocation,
+    this.agentPhoto,
+  });
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
         children: [
-          Image.asset('assets/images/desc1.png'),
+          Image.asset(image),
           Positioned(
             left: 20,
             top: 40,
@@ -25,10 +50,11 @@ class DescriptionScreen extends StatelessWidget {
             ),
           ),
           SingleChildScrollView(
+            physics: BouncingScrollPhysics(),
             child: Padding(
               padding: const EdgeInsets.only(top: 250),
               child: Container(
-                height: 500,
+                height: 530,
                 width: MediaQuery.of(context).size.width,
                 decoration: BoxDecoration(
                   color: Colors.white,
@@ -49,9 +75,9 @@ class DescriptionScreen extends StatelessWidget {
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text('Modern House', style: header2),
+                              Text(name, style: header2),
                               SizedBox(height: 5),
-                              Text('KBP Bandung, Indonesia', style: subTitle1)
+                              Text(location, style: subTitle1)
                             ],
                           ),
                           Row(
@@ -75,13 +101,13 @@ class DescriptionScreen extends StatelessWidget {
                       SizedBox(height: 15),
                       Row(
                         children: [
-                          Image.asset('assets/images/owner1.png', width: 50),
+                          Image.asset(agentPhoto, width: 50),
                           SizedBox(width: 12),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Text('De Kezia', style: header3),
-                              Text('Front Office', style: subTitle1),
+                              Text(agent, style: header3),
+                              Text(agentJob, style: subTitle1),
                             ],
                           ),
                           Spacer(),
@@ -101,11 +127,14 @@ class DescriptionScreen extends StatelessWidget {
                       Text('Description', style: header2),
                       SizedBox(height: 15),
                       Text(
-                        'Luxury homes at affordable prices with Bandung hilly atmosphere. Located in a strategic location, flood free.',
+                        description,
                         style: subTitle1,
                       ),
                       SizedBox(height: 25),
-                      Image.asset('assets/images/maos1.png'),
+                      GestureDetector(
+                        child: Image.asset(locationImage),
+                        onTap: () {},
+                      ),
                       SizedBox(height: 25),
                       Row(
                         children: [
@@ -114,7 +143,7 @@ class DescriptionScreen extends StatelessWidget {
                             children: [
                               Text('Price', style: subTitle1),
                               Text(
-                                '\$7,500',
+                                price,
                                 style: header3.copyWith(
                                   color: primaryColor,
                                   fontSize: 20,

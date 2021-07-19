@@ -63,28 +63,23 @@ class AddDataScreen extends StatelessWidget {
                             TextField(
                               controller: locationController,
                               decoration: InputDecoration(hintText: "Location"),
-                              keyboardType: TextInputType.number,
                             ),
                             TextField(
                               controller: agentController,
                               decoration: InputDecoration(hintText: "Agent"),
-                              keyboardType: TextInputType.number,
                             ),
                             TextField(
                               controller: mapController,
                               decoration: InputDecoration(hintText: "Maps"),
-                              keyboardType: TextInputType.number,
                             ),
                             TextField(
                               controller: priceContoller,
                               decoration: InputDecoration(hintText: "Price"),
-                              keyboardType: TextInputType.number,
                             ),
                             TextField(
                               controller: descController,
                               decoration:
                                   InputDecoration(hintText: "Description"),
-                              keyboardType: TextInputType.number,
                             ),
                           ],
                         ),

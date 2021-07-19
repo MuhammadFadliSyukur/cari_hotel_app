@@ -1,3 +1,4 @@
+import 'package:carihotel_app/models/auth_services.dart';
 import 'package:carihotel_app/screens/add_data_screen.dart';
 import 'package:carihotel_app/theme.dart';
 import 'package:carihotel_app/widgets/profile_menu.dart';
@@ -96,13 +97,8 @@ class ProfileScreen extends StatelessWidget {
                     icon: 'assets/icons/logout.svg',
                     text: 'Log Out',
                   ),
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => AddDataScreen(),
-                      ),
-                    );
+                  onTap: () async {
+                    await AuthServices.signOut();
                   },
                 ),
               ],
