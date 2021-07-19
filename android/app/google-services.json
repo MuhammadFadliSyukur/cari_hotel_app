@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1070663388140",
+    "project_id": "cari-hotel-app",
+    "storage_bucket": "cari-hotel-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1070663388140:android:ff6cbcf2e0501e77c5cec9",
+        "android_client_info": {
+          "package_name": "com.example.carihotel_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1070663388140-q56ntis5mjor01bt31o7himj8v3t62bc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyzdgzT_sTMGSDXTyjijT5Qdqm7aJUgGQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1070663388140-q56ntis5mjor01bt31o7himj8v3t62bc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
