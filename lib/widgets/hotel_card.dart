@@ -57,7 +57,7 @@ class HotelCard extends StatelessWidget {
                     Icon(Icons.star_rounded, size: 16, color: starColor),
                     Icon(Icons.star_rounded, size: 16, color: starColor),
                     Icon(Icons.star_rounded, size: 16, color: starColor),
-                    Icon(Icons.star_rounded, size: 16, color: greyColor),
+                    Icon(Icons.star_rounded, size: 16, color: starColor),
                   ],
                 )
               ],
