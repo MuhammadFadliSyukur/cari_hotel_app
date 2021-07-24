@@ -1,4 +1,5 @@
 import 'package:carihotel_app/screens/home_screen.dart';
+import 'package:carihotel_app/screens/map_screen.dart';
 import 'package:carihotel_app/screens/profile_screen.dart';
 import 'package:carihotel_app/theme.dart';
 import 'package:flutter/material.dart';
@@ -38,7 +39,10 @@ class _MyMainScreenState extends State<MyMainScreen> {
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.room),
         backgroundColor: secondaryColor,
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => MapScreen()));
+        },
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       body: Center(

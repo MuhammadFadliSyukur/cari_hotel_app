@@ -3,6 +3,8 @@
    <application
         android:label="carihotel_app"
         android:icon="@mipmap/ic_launcher">
+        <meta-data android:name="com.google.android.geo.API_KEY"
+                   android:value="AIzaSyCIG75wPtlYgPmntAm5ayRDRhT3_ojaRYw"/>
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
