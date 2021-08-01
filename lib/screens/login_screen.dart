@@ -140,6 +140,20 @@ class _LoginScreenState extends State<LoginScreen> {
                   )
                 ],
               ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  TextButton(
+                    onPressed: () async {
+                      AuthServices.signInAnonymous();
+                    },
+                    child: Text(
+                      'log in as Guest',
+                      style: subTitle1.copyWith(color: primaryColor),
+                    ),
+                  ),
+                ],
+              )
             ],
           ),
         ),

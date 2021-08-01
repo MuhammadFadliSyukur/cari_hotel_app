@@ -26,7 +26,7 @@ class HomeScreen extends StatelessWidget {
                 child: IconButton(onPressed: () {}, icon: Icon(Icons.menu)),
               ),
               SizedBox(height: 30),
-              Text('Find Your\nPerfect Place', style: header1),
+              Text('Find Your\nPerfect Place!', style: header1),
               SizedBox(height: 30),
               Container(
                 decoration: BoxDecoration(
@@ -43,7 +43,7 @@ class HomeScreen extends StatelessWidget {
                 child: TextFormField(
                   controller: searchContoller,
                   decoration: InputDecoration(
-                    hintText: 'Find youor dream place',
+                    hintText: 'Find your dream place',
                     hintStyle: subTitle1,
                     prefixIcon: Icon(Icons.search, size: 20),
                     border: OutlineInputBorder(
